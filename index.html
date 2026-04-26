@@ -1,31 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>César García | Web Developer</title>
+  <title>César Sainz | Frontend Developer</title>
+  <meta name="description" content="Frontend developer portfolio. Projects with HTML, CSS and JavaScript.">
 
-<link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="style-portfolio1.css">
 </head>
 
 <body>
 
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-container">
+
+    <div class="logo">
+      <img src="images/logo.png">
+    </div>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- MENÚ -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- HERO -->
 <header class="hero">
+  <h1>César Sainz</h1>
 
-<h1>César García</h1>
+  <p>
+    Desarrollador web frontend en formación | Estudiante de ASIR. 
+    Creo sitios web responsivos y centrados en el usuario, combinando tecnología y estrategia digital.
+  </p>
 
-<p>
-Web developer in training and ASIR student (Network Systems Administration).
-As a digital marketing technician, I combine technology and strategy to design
-functional, optimized websites focused on user experience.
-</p>
-
-<a href="#projects" class="btn">View Projects</a>
-
+  <a href="#projects" class="btn">Ver Proyectos</a>
 </header>
 
+<main>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>Sobre mí</h2>
+
+  <p>
+    Estoy formándome como desarrollador frontend mientras curso Administración de Sistemas Informáticos en Red (ASIR).
+    Mi perfil combina base técnica y enfoque estratégico, lo que me permite entender no solo cómo se construye una web, sino para qué sirve.
+  </p>
+
+  <p>
+    Trabajo con HTML, CSS y JavaScript desarrollando interfaces responsivas, accesibles y centradas en el usuario.
+    Mi objetivo es seguir creciendo en entornos profesionales donde aportar valor desde el primer momento.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Proyectos</h2>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <article class="project-card">
+      <img src="images\restaurant.png" alt="Interactive restaurant web interface preview" loading="lazy">
+
+      <div class="project-content">
+        <h3>Interfaz web interactiva para restaurante</h3>
+
+        <p>
+          Desarrollo de una interfaz dinámica con carrusel, navegación estructurada y validación de formularios mediante JavaScript.
+        </p>
+
+        <div class="project-links">
+          <a href="https://tuusuario.github.io/restaurant-project" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          <a href="https://github.com/tuusuario/restaurant-project" target="_blank" rel="noopener noreferrer">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2 -->
+    <article class="project-card">
+      <img src="images\vitalfit.png" alt="Structured web interface project preview" loading="lazy">
+
+      <div class="project-content">
+        <h3>Interfaz web estructurada</h3>
+
+        <p>
+          Diseño frontend enfocado en organización del contenido, usabilidad y adaptación a distintos dispositivos.
+        </p>
+
+        <div class="project-links">
+          <a href="https://tuusuario.github.io/vital-fit" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          <a href="https://github.com/tuusuario/vital-fit" target="_blank" rel="noopener noreferrer">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="project-card">
+      <img src="images\cyberux.png" alt="User-focused web layout with animations preview" loading="lazy">
+
+      <div class="project-content">
+        <h3>Layout orientado a experiencia de usuario</h3>
+
+        <p>
+          Interfaz diseñada con jerarquía visual clara, animaciones suaves y navegación centrada en el usuario.
+        </p>
+
+        <div class="project-links">
+          <a href="https://tuusuario.github.io/cyber-layout" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          <a href="https://github.com/tuusuario/cyber-layout" target="_blank" rel="noopener noreferrer">Código</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <!-- NIVEL 1 -->
+  <div class="footer-content">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h3>César Sainz</h3>
+      <p>Desarrollador Fronted</p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <h4>Perfiles</h4>
+
+      <div class="social-icons">
+
+        <!-- GitHub -->
+        <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.43 7.85 10.96.57.1.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.19.69-3.87-1.37-3.87-1.37-.52-1.32-1.28-1.67-1.28-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.07 0 0 .96-.31 3.15 1.17.91-.25 1.88-.37 2.85-.37.97 0 1.94.13 2.85.37 2.19-1.48 3.15-1.17 3.15-1.17.62 1.6.23 2.78.11 3.07.73.8 1.18 1.82 1.18 3.07 0 4.4-2.7 5.36-5.27 5.65.41.36.77 1.07.77 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.67.79.56C20.71 21.43 24 17.1 24 12 24 5.65 18.85.5 12 .5z"/>
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.3h.07c.67-1.26 2.3-2.6 4.73-2.6C22 7.7 24 10.2 24 14v10h-5v-9c0-2.1-.04-4.8-2.93-4.8-2.93 0-3.38 2.3-3.38 4.6V24h-5V8z"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NIVEL 2 -->
+  <p class="footer-copy">© 2026 César Sainz Ayuso — MiPortfolio</p>
+
+</footer>
+
+<script src="portfolio-1.js"></script>
 </body>
 </html>
